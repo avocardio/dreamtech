@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.widgets import MultiCursor
 import numpy as np
-
+ 
 e1 = pd.read_csv('E1M2.txt', skiprows=6, encoding = 'cp1252').rename(columns = {'Data:': 'Signal'}) 
 e2 = pd.read_csv('E2M2.txt', skiprows=6, encoding = 'cp1252').rename(columns = {'Data:': 'Signal'})
 
