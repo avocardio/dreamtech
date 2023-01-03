@@ -7,7 +7,7 @@ e1 = pd.read_csv('E1M2.txt', skiprows=6, encoding = 'cp1252').rename(columns = {
 e2 = pd.read_csv('E2M2.txt', skiprows=6, encoding = 'cp1252').rename(columns = {'Data:': 'Signal'})
 
 E1 = {
-    'Signal': e1['Signal'].rolling(100).mean(),
+    'Signal': e1['Signal'].rolling(1).mean() * (-1),
     'Type': 'Vertical',
     'Start Time': '23/12/2022 16:14:17',
     'Sample Rate': 128,
@@ -17,7 +17,7 @@ E1 = {
 }
 
 E2 = {
-    'Signal': e2['Signal'].rolling(100).mean(),
+    'Signal': e2['Signal'].rolling(1).mean() * (-1),
     'Type': 'Horizontal',
     'Start Time': '23/12/2022 16:14:17',
     'Sample Rate': 128,
