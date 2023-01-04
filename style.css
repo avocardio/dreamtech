@@ -12,11 +12,23 @@ canvas {
 }
 
 div {
-    /* postion unter the canvas */
+    /* postion under the canvas */
     position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-10%, 500%);
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+}
+
+.description { 
+    /* Have this be position over the other objects */
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
