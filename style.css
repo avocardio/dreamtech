@@ -1,34 +1,30 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
 canvas {
-    display: block;
-    margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-div {
-    /* postion under the canvas */
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-10%, 500%);
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 200px;
-}
-
-.description { 
-    /* Have this be position over the other objects */
+  
+#text {
     position: absolute;
     left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
+    top: 15%;
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transform: translate(-50%, 0);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }
+  
+.description {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
     text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }

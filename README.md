@@ -1,3 +1,3 @@
 # dreamtech
 
-- Output is saved when clicking circle (output is last click before middle button)
+This is the repository for the Interface and code used for the EOG data.
